@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+    <link rel="icon" href="../images/logo.png" type="image/jpg" />
+
+    <link rel="stylesheet" href="./output.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class=" mt-10">
+        <img src="../images/logo.png" alt="" class="mx-auto max-w-[120px] ">
+    </div>
+
+    <div class="h-64 w-full mt-5 text-center text-white bg-[url('../images/page-title.jpg')] bg-cover bg-center bg-no-repeat">
+        <h1 class="pt-10 text-4xl font-bold">Search Your Favourite Recipe</h1>
+        <p>A handful of simple ingredients typify the fresh , vibrant flavours of Greek cooking</p>
+    </div>
+
+    <div class="text-center pt-10">
+        <input type="text" name="search" id="search" placeholder="Search Recipe" class="w-full max-w-200 p-5 border-[0.5px] border-black">
+        <img src="../images/searchIcon.png" alt="" class="inline w-5 cursor-pointer" onclick="recipe()">
+    </div>
+
+    <!-- Recipie Section -->
+    <div class="w-[90vw] mx-auto " id="container">
+         <h1 class="text-center">Latest Recipes</h1>
+         <div id="recipie-section" class="mt-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 p-10" >
+    </div>
+        </div>
+
+
+        <div id="modal" class="fixed inset-0 bg-black/50 justify-center items-center hidden">
+            <div class="rounded bg-white w-[600px] max-h-[80vh] shadow-lg p-6 overflow-y-auto">
+                <img src="" alt="" id="modal-img">
+           
+           
+                <h4 class="font-bold" id="modal-title"></h4>
+                <p class="text-black" id="modal-text"></p>
+                <div class="flex justify-end">
+                <button class="bg-orange-500 text-white px-3 py-1 mt-2 rounded  hover:bg-orange-600" onclick="closeModal()">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+    <footer class="w-full h-10 text-white bg-gray-800 flex justify-start items-center mt-10">
+        <p class="pl-10">Copyright 2023- all right reserved</p>
+    </footer>
+
+</div>
+</body>
+</html>
